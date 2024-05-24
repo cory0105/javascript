@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 1200px;
+    height: 500px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.namecard{
+    width: 250px;
+    height: 150px;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.c1{
+    background-color: lightgreen;
+}
+.c2{
+    background-color: teal;
+}
+.c3{
+    background-color: lightgray;
+}
+.c4{
+    background-color: khaki;
+}
+
+.heading{
+    color: dodgerblue;
+    margin-bottom: 30px;
+}
