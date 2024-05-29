@@ -10,6 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, GmarketSansMedium;
+    text-decoration: none;
+    color: inherit;
 }
 
 .body {
@@ -77,8 +79,15 @@
 .game {
     border-radius: 5px;
     background-color: white;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 2);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
     padding-bottom: 20px;
+}
+
+.game:hover {
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.4);
+    transform: translate(0px, -5px);
+    cursor: pointer;
 }
 
 .image {
@@ -87,4 +96,54 @@
 
 .content p {
     margin: 0 0 5px 10px;
+}
+
+.product {
+    width: 100%;
+    background-color: khaki;
+    padding: 20px;
+}
+
+.product p {
+    margin: 10px 20px;
+}
+
+.login {
+    height: 300px;
+    background-color: khaki;
+    display: flex;
+    align-items: center;
+}
+
+.login-box {
+    width: 450px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.loginBtn {
+    width: 100px;
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: lightblue;
+    color: dodgerblue;
 }
